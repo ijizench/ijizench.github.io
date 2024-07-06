@@ -253,6 +253,39 @@ html, body {
     margin-bottom: 30px;
     line-height: 1;
 } 
+.containerr{
+    overflow: hidden;
+}
+.containerr .text{
+    position: relative;
+    color: #000000;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 4px;
+    
+}
+.containerr .text.first-text{
+    color: #000000;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-left: 2px solid #19223d;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
 
 .hero img {
     height: 600px;
